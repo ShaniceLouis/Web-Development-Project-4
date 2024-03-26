@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Project 4</title>
+    <link rel="icon" type="image/x-icon" href="sp4.png">
+<meta name="viewport" content="width=device-width, initial-scale= 1.0" >
+<style>* {
+  box-sizing: border-box;
+}
+body {
+  background: url(pictures/beach1.jpg) right bottom no-repeat, url(pictures/dance1.jpg) left top repeat, url(pictures/elephant1.jpg) right center no-repeat, url(pictures/fruits1.jpg) left center no-repeat, url(pictures/mountain1.jpg) right top no-repeat, url(pictures/thailand1.jpg) left bottom no-repeat;
+  background-color: cadetblue;
+  background-repeat: no-repeat;
+}
+
+.Photo {
+  background: right bottom no-repeat, left top no-repeat, right center no-repeat, left center no-repeat, right top no-repeat, left bottom no-repeat;
+  background-color: cadetblue;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.flex-container {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  background-image: url(pictures/yellow-1845394_1280.jpg);
+  border-radius: 10px;
+}
+
+form label {
+  font-size: 20px;
+}
+form input {
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid gold;
+  width: 95%;
+}
+
+#fill:focus {
+  background-color: lightblue;
+}
+
+form {
+  margin: auto;
+  background-color:lightgoldenrodyellow;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+ 
+button[type=submit] {
+font-size: 20px;
+margin: 10px 44% 10px 44%;
+padding: 10px;
+border: 2px solid goldenrod;
+box-shadow: 2px 2px 2px silver;
+}
+
+
+h1 {
+  color: turquoise;
+  text-shadow: 2px 1px 0px black;
+  text-align: center;
+}
+
+h4 {
+  color: red;
+  text-align: center;
+}
+
+header {
+ display: grid;
+}
+
+#myVid {
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+  .flex-container {
+      height: 100%;
+      width: 100%;
+  }
+}</style>
+</head>
+<body>
+<header>
+  <video autoplay muted loop id="myVid">
+    <source src="video/vid.mp4.mp4" type="video/mp4">
+  </video>
+</header>
+
+    <div class="flex-container" id="#main">
+    <form
+    action="https://formspree.io/f/xzbnvora"
+    method="POST"
+  >
+  <Caption><h1>Enter now to win a free trip to Thailand!!!!</h1>
+    <h4>Promotion ends on April 1st, 2024</h4>
+  </Caption>
+
+  <div>
+  <label>
+    First Name
+    <br>
+    <input type="name" name="first name"  placeholder="first name.." id="fill">
+    <br>
+    Last Name
+    <br>
+    <input type="name" name="last name"  placeholder="last name.." id="fill">
+    <br>
+  </label>
+</div>
+<div>
+  <label>
+    Street Address
+    <br>
+    <input type="address" name="street address" placeholder="street address.." id="fill">
+    </label>
+</div>
+<div>
+    <label>
+    City
+    <br>
+    <input type="address" name="city" placeholder="city.."  id="fill">
+    </label>
+</div>
+<div>
+    <label>
+    State
+    <br>
+    <select id="state" name="state">
+        <option value="AL">AL</option>
+        <option value="AK">AK</option>
+        <option value="AZ">AZ</option>
+        <option value="AR">AR</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DC">DC</option>
+        <option value="DE">DE</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="IA">IA</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="ME">ME</option>
+        <option value="MD">MD</option>
+        <option value="MA">MA</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MS">MS</option>
+        <option value="MO">MO</option>
+        <option value="MT">MT</option>
+        <option value="NE">NE</option>
+        <option value="NV">NV</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NY">NY</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VT">VT</option>
+        <option value="VA">VA</option>
+        <option value="WA">WA</option>
+        <option value="WV">WV</option>
+        <option value="WI">WI</option>
+        <option value="WY">WY</option>
+        <option value="GU">GU</option>
+        <option value="PR">PR</option>
+        <option value="RI">VI</option>
+      </select>
+    </label>
+    </div>
+    <div>
+        <label>
+    Zip Code
+    <br>
+    <input type="zip code" name="zip code" placeholder="zip code.." id="fill">
+  </label>
+</div>
+<div>
+    <label>
+      Phone Number
+      <br>
+      <input type="phone number" name="phone number" placeholder="000-000-0000" id="fill">
+    </label>
+</div>
+<div>
+    <label>
+      Your Email
+      <br>
+      <input type="email" name="email" placeholder="youremail@email.com" id="fill"> 
+    </label>
+</div>
+
+    <button type="submit">Submit</button>
+ 
+  </form>
+</div>
+</body>
+</html>
